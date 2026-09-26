@@ -80,55 +80,6 @@ a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}
 .portfolio{background:var(--dark);color:var(--cream)}.portfolio .eyebrow{color:var(--cream)}
 .portfolio-grid{margin-top:55px;display:grid;grid-template-columns:1.25fr 0.75fr;gap:20px;width:100%}
 .project{border-radius:var(--radius);overflow:hidden;position:relative;min-height:500px;border:1px solid rgba(249,235,192,0.2);background-size:cover;background-position:center;background-repeat:no-repeat;transition:transform .2s ease}
-.project-large{background-image:linear-gradient(135deg,rgba(30,30,30,.1),rgba(30,30,30,.6)),url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=85")}
-.project-small{background-image:linear-gradient(135deg,rgba(30,30,30,.1),rgba(30,30,30,.65)),url("https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=85");min-height:500px}
-.project-overlay{position:absolute;inset:auto 0 0 0;padding:30px;background:linear-gradient(transparent,rgba(0,0,0,.75));padding-top:110px}
-.project-tag{display:inline-block;padding:7px 12px;background:var(--yellow);color:var(--dark);border-radius:999px;font-size:11px;font-weight:800;text-transform:uppercase;margin-bottom:12px}
-.project h3{font-family:"League Spartan",sans-serif;font-size:42px;line-height:0.9;text-transform:uppercase;letter-spacing:-0.04em}
-.project p{margin-top:10px;color:rgba(249,235,192,0.75);font-size:14px}
-.project-link{display:inline-flex;margin-top:18px;padding:11px 17px;background:var(--cream);color:var(--dark);border-radius:999px;font-size:13px;font-weight:800;transition:0.25s ease}
-.project-link:hover{background:var(--red);color:white}
-.process{background:var(--yellow)}.process-list{margin-top:60px;border-top:1px solid var(--dark)}
-.process-item{display:grid;grid-template-columns:100px 1fr 1fr;gap:30px;align-items:center;padding:30px 0;border-bottom:1px solid var(--dark)}
-.process-number{font-family:"League Spartan",sans-serif;font-size:30px;font-weight:800}
-.process-item h3{font-family:"League Spartan",sans-serif;font-size:38px;line-height:0.9;text-transform:uppercase;letter-spacing:-0.04em}
-.process-item p{font-size:15px;color:rgba(30,30,30,0.7)}
-.contact{background:var(--white)}.contact-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:80px;align-items:start}
-.contact-title{font-family:"League Spartan",sans-serif;font-size:clamp(55px,7vw,100px);line-height:0.82;letter-spacing:-0.06em;text-transform:uppercase}
-.contact-info{margin-top:35px;display:flex;flex-direction:column;gap:13px}
-.contact-info a{font-size:17px;font-weight:700;transition:0.2s ease}.contact-info a:hover{color:var(--red)}
-.contact-form{padding:35px;background:var(--cream);border:1px solid var(--border);border-radius:var(--radius)}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.field{margin-bottom:15px}.field label{display:block;font-size:12px;font-weight:800;text-transform:uppercase;margin-bottom:7px;letter-spacing:0.05em}
-.field input,.field textarea,.field select{width:100%;border:1px solid rgba(30,30,30,0.22);background:var(--white);color:var(--dark);border-radius:12px;padding:14px 15px;outline:none;transition:0.2s ease}
-.field textarea{min-height:125px;resize:vertical}
-.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--red);box-shadow:0 0 0 3px rgba(225,56,37,0.1)}
-.submit-btn{width:100%;border:0;cursor:pointer;background:var(--red);color:white;padding:16px;border-radius:999px;font-weight:800;transition:0.25s ease}.submit-btn:hover{background:var(--dark);transform:translateY(-2px)}
-.form-note{margin-top:12px;text-align:center;font-size:12px;color:rgba(30,30,30,.55)}
-footer{background:var(--red);color:var(--cream);padding:60px 0 25px;width:100%}
-.footer-top{display:flex;justify-content:space-between;align-items:start;gap:40px}
-.footer-logo{font-family:"League Spartan",sans-serif;font-size:70px;line-height:0.8;font-weight:900;letter-spacing:-0.06em}
-.footer-tagline{margin-top:18px;font-weight:700}.footer-links{display:flex;gap:25px;flex-wrap:wrap}.footer-links a{font-size:14px;font-weight:700}.footer-links a:hover{text-decoration:underline}
-.footer-bottom{border-top:1px solid rgba(249,235,192,.3);margin-top:50px;padding-top:20px;display:flex;justify-content:space-between;gap:20px;font-size:12px;opacity:0.75}
-.reveal{opacity:0;transform:translateY(35px);transition:opacity 0.7s ease,transform 0.7s ease}
-.reveal.show{opacity:1;transform:translateY(0)}
-.hero .reveal{opacity:1!important;transform:none!important}
-@media(max-width:900px){
-.nav-links{position:absolute;top:65px;left:0;width:100%;background:var(--cream);border:1px solid var(--border);border-radius:22px;padding:18px;display:none;flex-direction:column;align-items:stretch;gap:4px}
-.nav-links.active{display:flex}.nav-links a{padding:12px;border-radius:10px}.nav-links a:hover{background:var(--yellow)}.nav-cta{text-align:center;margin-top:5px}.menu-button{display:block}
-.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero-card{max-width:520px;width:100%;margin:20px auto 0;min-height:390px}
-.services-top{display:block}.services-top .section-description{margin-top:20px}.portfolio-grid{grid-template-columns:1fr}.project,.project-small{min-height:420px}.contact-grid{gap:45px}.about-stamp{width:190px;height:190px;font-size:25px}
-}
-@media(max-width:650px){
-.container{width:min(var(--max),calc(100% - 28px))}.section{padding:80px 0}.navbar{top:10px;width:calc(100% - 20px)}
-.hero{padding-top:135px}.hero-title{font-size:clamp(52px,17vw,90px);line-height:.85}.hero-title .outline{-webkit-text-stroke:1.5px var(--dark)}
-.hero-copy{font-size:16px}.hero-card{min-height:310px;transform:rotate(0deg)}.hero-card-inner{transform:rotate(0deg)}.hero-star{font-size:45px}
-.section-title{font-size:clamp(52px,16vw,80px)}
-.founders,.services-grid,.form-row{grid-template-columns:1fr}
-.service-card{min-height:300px;padding:27px}.service-card h3{font-size:43px}.service-bottom{display:block}.price{margin-top:15px}
-.project h3{font-size:35px}.process-item{grid-template-columns:50px 1fr;gap:15px}.process-item p{grid-column:2}
-.contact-form{padding:22px}.footer-top{display:block}.footer-logo{font-size:60px}.footer-links{margin-top:35px}.footer-bottom{display:block}.footer-bottom span{display:block;margin-top:6px}
-}
 </style>
 </head>
 <body>
@@ -150,7 +101,7 @@ footer{background:var(--red);color:var(--cream);padding:60px 0 25px;width:100%}
 <p class="hero-copy">We build clean, modern and functional websites for businesses, startups and growing brands.</p>
 <div class="hero-buttons">
 <a href="#contact" class="btn btn-dark">Start a Project →</a>
-<a href="https://wa.me/918109324626" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp Us</a>
+<a href="https://wa.me/919111349311" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp Us</a>
 </div>
 </div>
 <div class="hero-card reveal show"><div class="hero-star">✦</div><div class="hero-card-inner"><div class="hero-card-text">Build.<br />Launch.<br />Grow.</div></div></div>
@@ -169,7 +120,8 @@ footer{background:var(--red);color:var(--cream);padding:60px 0 25px;width:100%}
 <div class="eyebrow">About Webefy</div>
 <h2 class="about-heading">We're students, developers & <span class="red">builders.</span></h2>
 <p class="about-text">While studying Computer Science, we're building Webefy alongside our academic journey — helping businesses turn their ideas into modern digital experiences.</p>
-<div class="founders single-founder">
+<div class="founders">
+<div class="founder"><h3>Vishesh Panthi</h3><div class="founder-role">Founder · UI Designer & Marketing Manager</div><p>Focused on design, marketing, web development, animation and video editing.</p></div>
 <div class="founder"><h3>Jatin Ahirwar</h3><div class="founder-role">Founder · Web Developer</div><a href="https://webidex.in" target="_blank" rel="noopener noreferrer" class="webidex-founder-link">Founder of Webidex.in ↗</a><p>Focused on coding, web development and the technical side of building websites.</p></div>
 </div>
 </div>
@@ -225,15 +177,14 @@ footer{background:var(--red);color:var(--cream);padding:60px 0 25px;width:100%}
 </div>
 </div>
 </section>
-
 <section class="section contact" id="contact">
 <div class="container">
 <div class="contact-grid">
-<div class="reveal"><div class="eyebrow">Let's Talk</div><h2 class="contact-title">Let's build something <span class="red">great.</span></h2><div class="contact-info"><a href="tel:+918109324626">📞 +91 81093 24626</a><a href="mailto:webefy.in@gmail.com">✉ webefy.in@gmail.com</a><a href="https://instagram.com/webefy.in" target="_blank" rel="noopener">◎ @webefy.in</a></div></div>
+<div class="reveal"><div class="eyebrow">Let's Talk</div><h2 class="contact-title">Let's build something <span class="red">great.</span></h2><div class="contact-info"><a href="tel:+918109324626">📞 +91 81093 24626</a><a href="tel:+919111349311">📞 +91 91113 49311</a><a href="mailto:webefy.in@gmail.com">✉ webefy.in@gmail.com</a><a href="https://instagram.com/webefy.in" target="_blank" rel="noopener">◎ @webefy.in</a></div></div>
 <div class="contact-form reveal"><form id="contactForm">
 <div class="form-row"><div class="field"><label for="name">Your Name</label><input type="text" id="name" name="name" placeholder="Enter your name" required /></div><div class="field"><label for="business">Business Name</label><input type="text" id="business" name="business" placeholder="Your business" required /></div></div>
 <div class="form-row"><div class="field"><label for="phone">WhatsApp / Phone</label><input type="tel" id="phone" name="phone" placeholder="Your number" required /></div><div class="field"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="you@example.com" required /></div></div>
-<div class="field"><label for="service">What do you need?</label><select id="service" name="service" required><option value="">Select a service</option><option value="Business Website">Business Website</option><option value="WordPress Website">WordPress Website</option><option value="Landing Page">Landing Page</option><option value="E-Commerce Website">E-Commerce Website</option><option value="Template Setup - Clothing Store">Template: Clothing Store</option><option value="Template Setup - Hotel">Template: Hotel</option><option value="Template Setup - Sweet Shop">Template: Sweet Shop</option><option value="Template Setup - Salon">Template: Salon</option><option value="Not Sure">Not Sure Yet</option></select></div>
+<div class="field"><label for="what do you need?">What do you need?</label><select id="service" name="service" required><option value="">Select a service</option><option value="Business Website">Business Website</option><option value="WordPress Website">WordPress Website</option><option value="Landing Page">Landing Page</option><option value="E-Commerce Website">E-Commerce Website</option><option value="Template Setup - Clothing Store">Template: Clothing Store</option><option value="Template Setup - Hotel">Template: Hotel</option><option value="Template Setup - Sweet Shop">Template: Sweet Shop</option><option value="Template Setup - Salon">Template: Salon</option><option value="Not Sure">Not Sure Yet</option></select></div>
 <div class="field"><label for="message">Tell us about your project</label><textarea id="message" name="message" placeholder="Tell us what you want to build..." required></textarea></div>
 <button type="submit" class="submit-btn">Send Enquiry →</button>
 <p class="form-note">Clicking send will open your email app with the enquiry details ready to send.</p>
